@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="text">text</string>
+    <string name="textview">Counter</string>
+
+    <string-array name="arr">
+        <item> chaim </item>
+        <item> david </item>
+        <item> moshe </item>
+
+    </string-array>
+
+
+</resources>
+

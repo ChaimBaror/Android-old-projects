@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="false"
+            android:focusable="false"
+            android:scaleType="centerCrop"
+            android:transitionName="image_shared"
+            tools:src="@drawable/abc_vector_test" />
+
+        <TextView
+            android:id="@+id/titleLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/thumbnail"
+            android:layout_toRightOf="@+id/overflow"
+            android:ellipsize="end"
+            android:padding="16dp"
+            android:textColor="#4c4c4c"
+            android:textSize="16sp"
+            android:transitionName="name_shared"
+            tools:text="Recipe 1" />
+
+        <ImageView
+            android:id="@+id/overflow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/thumbnail"
+            android:layout_alignTop="@id/titleLabel"
+            android:layout_alignBottom="@id/titleLabel"
+            android:scrollbarThumbHorizontal="@android:drawable/btn_star_big_on"
+             />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
